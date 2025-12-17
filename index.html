@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Meera Ameera · Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Portfolio of Meera Ameera — AI, automation, and software projects."
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <meta property="og:title" content="Meera Ameera · Portfolio" />
+  <meta
+    property="og:description"
+    content="Projects across AI, ML, automation, and software engineering."
+  />
+</head>
+
+<body>
+  <!-- HEADER / NAV  -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top">
+        <span class="logo">MA</span>
+        <span>Meera Ameera</span>
+      </a>
+
+      <ul>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="top">
+    <!-- HERO -->
+    <section class="intro-hero container" id="home" data-animate>
+      <div class="intro-content">
+        <div class="profile-shell">
+          <div class="profile-glow"></div>
+          <div class="profile-photo-wrapper">
+            <img
+              src="assets/meera-profile.jpg"
+              alt="Photo of Meera Ameera"
+              class="profile-photo"
+            />
+          </div>
+        </div>
+
+        <h1 class="intro-title">Hello! I’m Meera Ameera</h1>
+        <p class="intro-subtitle">
+          Diploma in Applied Artificial Intelligence<br />
+          Temasek Polytechnic · Class of 2026
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section container" id="about" data-animate>
+      <h2>About Me</h2>
+
+      <p>
+        Hello, I’m Meera Ameera, a final-year Diploma in Applied Artificial Intelligence student at Temasek Polytechnic (graduating May 2026), currently interning as a Data Engineer with OCBC’s Group Data Office. I’ve always been curious about how technology can solve real-world problems, and through my academic projects and internship experience, I’ve learned how to turn that curiosity into practical solutions.
+      </p>
+
+      <p>
+        During my internship, I worked on automating data processing workflows and saw firsthand how system accuracy, reliability, and design choices can have real business consequences. It’s been eye-opening and I’ve come to appreciate that building good systems isn’t just about writing code that works, but about creating solutions that truly make a difference.
+      </p>
+
+      <p>
+        Outside of my internship, I enjoy experimenting with AI and software engineering through personal projects, like computer vision models and web-based applications. I also love running and travelling, which help me recharge, reflect, and gain fresh perspectives that I can bring back to both my personal and professional work.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section container" id="skills" data-animate>
+      <h2>Skills</h2>
+      <p class="section-intro">
+        Hands-on technical skills developed through projects and industry internship experience.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-group" data-animate>
+          <h3>Programming & Development</h3>
+          <ul>
+            <li>Python, JavaScript, Dart</li>
+            <li>HTML, CSS, Web Development</li>
+            <li>Flutter, Streamlit & Mobile App Development</li>
+            <li>API Development & Integration</li>
+            <li>IoT & Edge Development</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" data-animate>
+          <h3>Machine Learning & AI</h3>
+          <ul>
+            <li>Supervised Learning</li>
+            <li>Deep Learning & Computer Vision</li>
+            <li>Deep Learning & Computer VisionG</li>
+            <li>Data Science & Analytics</li>
+            <li>Responsible & Ethical A</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" data-animate>
+          <h3>Cloud, Automation & Professional Skills</h3>
+          <ul>
+            <li>AWS, Firebase</li>
+            <li>SQL & NoSQL Databases</li>
+            <li>Robotic Process Automation (UiPath)</li>
+            <li>Automation & Workflow Optimisation</li>
+            <li>Technical Documentation</li>
+            <li>Stakeholder Communication</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="projects-header" data-animate>
+          <h2>Projects</h2>
+          <p class="section-intro">
+            A curated selection of academic and industry projects demonstrating my ability to apply AI, automation, and software development in real-world contexts.
+          </p>
+        </div>
+
+        <div class="projects-group" data-animate>
+          <h3 class="section-subtitle">Academic Projects</h3>
+          <div class="grid" id="academic-projects-grid"></div>
+        </div>
+
+        <div class="projects-group" data-animate>
+          <h3 class="section-subtitle" style="margin-top: 2rem;">
+            Industry Work & Personal Projects
+          </h3>
+          <div class="grid" id="work-projects-grid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="container">
+      <div class="socials">
+        <a href="mailto:meerazack@gmail.com">Email</a>
+        <a href="https://github.com/meeraameera" target="_blank" rel="noopener">
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/meera-ameera-abdul-razak-764478273/"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
+      </div>
+
+      <p style="margin-top: 8px;">
+        © <span id="year"></span> Meera Ameera. Built with HTML, CSS &amp; JS.
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" onclick="closeModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">×</button>
+
+    <h3 id="modal-title"></h3>
+    <p id="modal-tech" class="modal-tech"></p>
+    <p id="modal-description"></p>
+
+    <div id="modal-links" class="modal-links"></div>
+  </div>
+</div>
+</body>
+</html>

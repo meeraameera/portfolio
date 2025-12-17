@@ -1,0 +1,394 @@
+/* -----------------
+   CSS RESET
+------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #0b0b0d;
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+
+/* -----------------
+   GLOBAL
+------------------ */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.section-intro {
+  color: #b5b5b5;
+  max-width: 700px;
+  margin-top: 0.75rem;
+}
+
+
+/* -----------------
+   NAVBAR
+------------------ */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(11, 11, 13, 0.7);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.logo {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav a {
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #ffffff;
+}
+
+
+/* -----------------
+   HERO
+------------------ */
+.intro-hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.profile-shell {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 2rem;
+}
+
+.profile-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, #8b5cf6, transparent 70%);
+  filter: blur(25px);
+  opacity: 0.7;
+}
+
+.profile-photo-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-subtitle {
+  color: #b5b5b5;
+  font-size: 1rem;
+}
+
+
+/* -----------------
+   ABOUT / SKILLS
+------------------ */
+.about-section,
+.skills-section {
+  padding: 6rem 0;
+}
+
+.about-section p {
+  color: #cfcfcf;
+  max-width: 800px;
+  margin-top: 1rem;
+}
+
+.skills-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.skill-group {
+  background: #141417;
+  border-radius: 14px;
+  padding: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-group h3 {
+  margin-bottom: 0.75rem;
+}
+
+.skill-group li {
+  color: #cfcfcf;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+
+/* -----------------
+   PROJECTS
+------------------ */
+.projects-section {
+  padding: 6rem 0;
+}
+
+.section-subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.project-card {
+  background: linear-gradient(180deg, #141417, #0f0f12);
+  border-radius: 16px;
+  padding: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+}
+
+.project-card p {
+  color: #cfcfcf;
+  font-size: 0.9rem;
+  margin: 0.75rem 0;
+}
+
+.project-card .tech {
+  display: block;
+  color: #8b5cf6;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-card a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.projects-header {
+  margin-bottom: 3rem;   
+}
+
+
+/* -----------------
+   FOOTER
+------------------ */
+footer {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.socials a {
+  margin-right: 1rem;
+  color: #cfcfcf;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.socials a:hover {
+  color: white;
+}
+
+
+/* -----------------
+   ANIMATIONS
+------------------ */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s ease;
+}
+
+[data-animate].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* -----------------
+   PROJECT MODAL
+------------------ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-overlay.open {
+  display: flex;
+}
+
+.modal {
+  background: #141417;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal h3 {
+  margin-bottom: 0.5rem;
+}
+
+.modal-tech {
+  color: #8b5cf6;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.modal p {
+  color: #cfcfcf;
+  font-size: 0.95rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modal ul {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+.modal li ul {
+  list-style-type: circle;
+  margin-left: 1rem;
+}
+
+.modal h4 {
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.modal li strong {
+  color: #8b5cf6;
+}
+
+.view-more {
+  font-size: 0.8rem;
+  color: #b5b5b5;
+}
+
+
+/* -----------------
+   PROJECT BUTTONS
+------------------ */
+.project-links,
+.modal-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-size: 0.75rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-youtube {
+  background: linear-gradient(135deg, #ff0033, #cc0029);
+}
+
+.btn-github {
+  background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+}
