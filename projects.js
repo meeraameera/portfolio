@@ -228,7 +228,7 @@ const academicProjects = [
 
 const workProjects = [
   {
-    title: "Automated Trade Booking Sheet (Internship Project)",
+    title: "Automated Trade Booking Sheet (OCBC Internship Project: Data Engineering)",
     description:
       "An intelligent backend automation system designed to streamline the processing of unstructured financial term sheets. By leveraging YAML-driven configurations and rule-based AI logic, the system automates the ingestion, parsing, and validation of complex investment documents (PDFs and Outlook items), transforming them into standardized downstream deliverables for trade booking and lifecycle management.",
     tech: "Python · YAML · PyWin32 · PDFPlumber · Pandas · Camelot · Data Engineering · Automation",
