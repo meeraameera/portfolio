@@ -1,18 +1,22 @@
 /* Scroll reveal */
 const animatedElements = document.querySelectorAll("[data-animate]");
 
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
 
-animatedElements.forEach(el => observer.observe(el));
+  animatedElements.forEach(el => observer.observe(el));
+} else {
+  animatedElements.forEach(el => el.classList.add("visible"));
+}
 
 
 /* Active nav link */
